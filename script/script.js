@@ -16,6 +16,13 @@ function myFunction() {
             element.appendChild(link);
             return;
         }
+            var div1 =document.createElement("div");
+            var link1 = document.createElement("h3");
+            var node1 = document.createTextNode( "Do you mean..?");
+            link1.appendChild(node1);
+            var element1 = document.getElementById("SearchResults");
+            div1.appendChild(link1);
+            element1.appendChild(div1);
         for(let i of responseJSON.results)
         {
 

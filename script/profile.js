@@ -8,10 +8,8 @@ xhrRequest.onload=function(){
     elem.src = responseJSON.image.url;
     document.getElementById("imagebox").appendChild(elem);
     //name
-    var link = document.createElement("H1");
     var node = document.createTextNode(responseJSON.name);
-    link.appendChild(node);
-    document.getElementById("namebox").appendChild(link);
+    document.getElementById("naam").appendChild(node);
 
     //power stats
     for (var key of Object.keys(responseJSON.powerstats)) {
@@ -59,3 +57,14 @@ xhrRequest.onload=function(){
 }
 xhrRequest.open('get',"https://superheroapi.com/api/4630807856945450/"+localStorage.getItem('names'),true);
 xhrRequest.send();
+
+function addtofav()
+{
+    var ab=JSON.parse(window.localStorage.getItem('favs'));
+    ab.fav.push(document.getElementById("naam").innerHTML);
+    window.localStorage.setItem("favs",JSON.stringify(ab));
+    console.log(window.localStorage.getItem('favs'));
+    
+    
+
+}
