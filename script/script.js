@@ -1,6 +1,5 @@
-var names=[];
-document.getElementById("myform").addEventListener("submit", myFunction);
 
+// document.getElementById("myform").addEventListener("submit", myFunction);
 function myFunction() {
     var xhrRequest= new XMLHttpRequest();
 
@@ -19,12 +18,18 @@ function myFunction() {
         }
         for(let i of responseJSON.results)
         {
+
+            var div =document.createElement("div");
             var link = document.createElement("A");
             var node = document.createTextNode(i.name);
             link.setAttribute("href", "profile.html");
+            link.setAttribute("onclick","localStorage.setItem('names',id)");
+            link.setAttribute("id",i.id);
             link.appendChild(node);
-            var element = document.getElementById("individual_result");
-            element.appendChild(link);
+            var element = document.getElementById("SearchResults");
+            div.appendChild(link);
+            element.appendChild(div);
+
         }
         // alert(responseJSON.name);
         
