@@ -15,8 +15,43 @@ xhrRequest.onload=function(){
 
     //power stats
     for (var key of Object.keys(responseJSON.powerstats)) {
+        var div =document.createElement("div");
         var stat = document.createTextNode(key + " -> " + responseJSON.powerstats[key])
-        document.getElementById("power").appendChild(stat);
+        div.appendChild(stat);
+        document.getElementById("power").appendChild(div);
+
+    }
+
+    //biography
+    for (var key of Object.keys(responseJSON.biography)) {
+        var div =document.createElement("div");
+        var stat = document.createTextNode(key + " -> " + responseJSON.biography[key])
+        div.appendChild(stat);
+        document.getElementById("biography").appendChild(div);
+
+    }
+    //appearance
+    for (var key of Object.keys(responseJSON.appearance)) {
+        var div =document.createElement("div");
+        var stat = document.createTextNode(key + " -> " + responseJSON.appearance[key])
+        div.appendChild(stat);
+        document.getElementById("appearance").appendChild(div);
+
+    }
+    //work
+    for (var key of Object.keys(responseJSON.work)) {
+        var div =document.createElement("div");
+        var stat = document.createTextNode(key + " -> " + responseJSON.work[key])
+        div.appendChild(stat);
+        document.getElementById("work").appendChild(div);
+
+    }
+    //connections
+    for (var key of Object.keys(responseJSON.connections)) {
+        var div =document.createElement("div");
+        var stat = document.createTextNode(key + " -> " + responseJSON.connections[key])
+        div.appendChild(stat);
+        document.getElementById("connections").appendChild(div);
 
     }
 
