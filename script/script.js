@@ -44,7 +44,7 @@ function myFunction() {
         
     }
     var superHeroName=document.getElementById("superHeroName").value;
-    xhrRequest.open('get',"https://superheroapi.com/api/4630807856945450/search/"+superHeroName,true);
+    xhrRequest.open('get',"https://superheroapi.com/api.php/4630807856945450/search/"+superHeroName,true);
     xhrRequest.send();
     return false;
     
