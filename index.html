@@ -5,10 +5,16 @@
     </head>
     <body>
         <h1>SuperHero Website</h1>
-        <form action="" id="myform" method="GET">
+        <form action="" id="myform" onsubmit="return false;">
             <input id="superHeroName" type="text" placeholder="Enter a Super Hero Name ...  " name="name">
             <button type="submit">Search</button>
         </form>
+        <h3> Do you mean..?</h3>
+        <div id="SearchResults">
+            <div id="individual_result">
+
+            </div>
+        </div>
         <script src="./script/script.js"></script>
     </body>
 </html>

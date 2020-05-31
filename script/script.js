@@ -1,3 +1,4 @@
+var names=[];
 document.getElementById("myform").addEventListener("submit", myFunction);
 
 function myFunction() {
@@ -7,12 +8,22 @@ function myFunction() {
     {
         console.log(xhrRequest.response);
         var responseJSON=JSON.parse(xhrRequest.response);
-        alert(responseJSON.name);
+        for(let i of responseJSON.results)
+        {
+            var link = document.createElement("A");
+            var node = document.createTextNode(i.name);
+            link.setAttribute("href", "https://www.w3schools.com");
+            link.appendChild(node);
+            var element = document.getElementById("individual_result");
+            element.appendChild(link);
+        }
+        // alert(responseJSON.name);
         
     }
     var superHeroName=document.getElementById("superHeroName").value;
-    xhrRequest.open('get',"https://superheroapi.com/api/4630807856945450/search/"+superHeroName,false);
+    xhrRequest.open('get',"https://superheroapi.com/api/4630807856945450/search/"+superHeroName,true);
     xhrRequest.send();
+    return false;
     
 }
 
