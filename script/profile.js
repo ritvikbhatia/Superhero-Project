@@ -14,7 +14,7 @@ xhrRequest.onload=function(){
     //power stats
     for (var key of Object.keys(responseJSON.powerstats)) {
         var div =document.createElement("div");
-        var stat = document.createTextNode(key + " -> " + responseJSON.powerstats[key])
+        var stat = document.createTextNode(key + "    :    " + responseJSON.powerstats[key])
         div.appendChild(stat);
         document.getElementById("power").appendChild(div);
 
@@ -23,7 +23,7 @@ xhrRequest.onload=function(){
     //biography
     for (var key of Object.keys(responseJSON.biography)) {
         var div =document.createElement("div");
-        var stat = document.createTextNode(key + " -> " + responseJSON.biography[key])
+        var stat = document.createTextNode(key + "    :    " + responseJSON.biography[key])
         div.appendChild(stat);
         document.getElementById("biography").appendChild(div);
 
@@ -31,7 +31,7 @@ xhrRequest.onload=function(){
     //appearance
     for (var key of Object.keys(responseJSON.appearance)) {
         var div =document.createElement("div");
-        var stat = document.createTextNode(key + " -> " + responseJSON.appearance[key])
+        var stat = document.createTextNode(key + "    :    " + responseJSON.appearance[key])
         div.appendChild(stat);
         document.getElementById("appearance").appendChild(div);
 
@@ -39,7 +39,7 @@ xhrRequest.onload=function(){
     //work
     for (var key of Object.keys(responseJSON.work)) {
         var div =document.createElement("div");
-        var stat = document.createTextNode(key + " -> " + responseJSON.work[key])
+        var stat = document.createTextNode(key + "    :    " + responseJSON.work[key])
         div.appendChild(stat);
         document.getElementById("work").appendChild(div);
 
@@ -47,7 +47,7 @@ xhrRequest.onload=function(){
     //connections
     for (var key of Object.keys(responseJSON.connections)) {
         var div =document.createElement("div");
-        var stat = document.createTextNode(key + " -> " + responseJSON.connections[key])
+        var stat = document.createTextNode(key + "    :    " + responseJSON.connections[key])
         div.appendChild(stat);
         document.getElementById("connections").appendChild(div);
 

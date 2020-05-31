@@ -1,5 +1,5 @@
-var a={"fav":["Batman"]};
-window.localStorage.setItem("favs",JSON.stringify(a));
+// var a={"fav":["Batman"]};
+// window.localStorage.setItem("favs",JSON.stringify(a));
 var ab=JSON.parse(window.localStorage.getItem('favs'));
 console.log(ab);
 for(var i of ab.fav)

@@ -4,10 +4,10 @@ body{
     font-size: large;
 }
 #favss{
-    position: absolute;
+    position: sticky;
     bottom: 5%;
     margin: 5px;
-    left: 45%;
+    left: 4%;
     font-size: x-large;
 }
 #superHeroName{
@@ -17,4 +17,8 @@ body{
 }
 #sub{
     font-size: xx-large;
+}
+
+#SearchResults div{
+    padding: 1%;
 }

@@ -1,0 +1,18 @@
+#namebox{
+    text-align: center;
+    font-size: xx-large;
+}
+#supercontainter{
+    display: flex;
+    flex-direction: column;
+}
+#imagebox img
+{
+    width: 30vw;
+    height: 50vh;
+    object-fit: contain;
+}
+body{
+    background-color: beige;
+    font-size: large;
+}

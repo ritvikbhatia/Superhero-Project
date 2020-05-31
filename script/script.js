@@ -12,10 +12,11 @@ function myFunction() {
             var link = document.createElement("p");
             var node = document.createTextNode("Nothing Found");
             link.appendChild(node);
-            var element = document.getElementById("individual_result");
+            var element = document.getElementById("SearchResults");
             element.appendChild(link);
             return;
         }
+        else{
             var div1 =document.createElement("div");
             var link1 = document.createElement("h3");
             var node1 = document.createTextNode( "Do you mean..?");
@@ -38,6 +39,7 @@ function myFunction() {
             element.appendChild(div);
 
         }
+    }
         // alert(responseJSON.name);
         
     }
