@@ -55,7 +55,7 @@ xhrRequest.onload=function(){
 
 
 }
-xhrRequest.open('get',"https://superheroapi.com/api/4630807856945450/"+localStorage.getItem('names'),true);
+xhrRequest.open('get',"https://superheroapi.com/api.php/4630807856945450/"+localStorage.getItem('names'),true);
 xhrRequest.send();
 
 function addtofav()
