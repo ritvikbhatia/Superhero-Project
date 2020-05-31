@@ -11,8 +11,19 @@
     width: 30vw;
     height: 50vh;
     object-fit: contain;
+    margin: 2%;
 }
 body{
     background-color: beige;
     font-size: large;
+}
+#main{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 60vh;
+
+}
+#imagebox{
+    width: 50vw;
 }
