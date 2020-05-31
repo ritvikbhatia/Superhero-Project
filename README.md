@@ -1,7 +1,7 @@
 # Superhero-Project
 You can have a look at the project with the following link 
 <br>
-LINK : https://ritvikbhatia.github.io/Superhero-Project/.
+LINK : https://ritvikbhatia.github.io/Superhero-Project/
 
 So, this is basically a platform where you can search about super heroes from multiple universe .
 <br>
