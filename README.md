@@ -3,7 +3,7 @@ You can have a look at the project with the following link
 <br>
 LINK : https://ritvikbhatia.github.io/Superhero-Project/
 
-So, this is basically a platform where you can search about super heroes from multiple universe .
+So, this is basically a platform where you can search about super heroes from multiverse .
 <br>
 It will give you the complete  information about your hero's Powerstats. Biography. Appearance. Work. Connections. Images etc
 <br>
