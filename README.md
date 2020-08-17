@@ -12,7 +12,7 @@ The project works on Super Hero API .
 <br>
 LINK: https://superheroapi.com/?ref=apilist.fun
 
-IMPORTANT NOTE:
+IMPORTANT NOTE :
 <br>
 If the project shows CORS error 
 "Access to XMLHttpRequest at 'xxx' from origin 'null' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource."
